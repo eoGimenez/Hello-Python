@@ -26,6 +26,7 @@ print(my_other_list[1])
 print(my_other_list[-1])
 print(my_other_list[-4])
 print(my_list.count(30))
+print("esto va ?",len(my_list))
 # print(my_other_list[4]) IndexError
 # print(my_other_list[-5]) IndexError
 
@@ -34,8 +35,8 @@ print(my_other_list.index("Brais"))
 age, height, name, surname = my_other_list
 print(name)
 
-name, height, age, surname = my_other_list[2], my_other_list[1], my_other_list[0], my_other_list[3]
-print(age)
+name, height, age, = my_other_list[2], my_other_list[1], my_other_list[0]
+print("testeando ", age)
 
 # Concatenación
 
@@ -63,7 +64,7 @@ print(my_list.pop())
 print(my_list)
 
 my_pop_element = my_list.pop(2)
-print(my_pop_element)
+print("my_pop", my_pop_element)
 print(my_list)
 
 del my_list[2]
@@ -81,7 +82,9 @@ my_new_list.reverse()
 print(my_new_list)
 
 my_new_list.sort()
-print(my_new_list)
+print("sin reverse",my_new_list)
+my_new_list.sort(reverse=1)
+print("con reverse",my_new_list)
 
 # Sublistas
 

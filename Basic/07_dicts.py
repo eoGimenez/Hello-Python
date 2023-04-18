@@ -53,7 +53,7 @@ print(my_dict)
 # Otras operaciones
 
 print(my_dict.items())
-print(my_dict.keys())
+print("QUE E ESTO",my_dict.keys())
 print(my_dict.values())
 
 my_list = ["Nombre", 1, "Piso"]

@@ -37,6 +37,8 @@ print(my_sum_tuple[3:6])
 
 # Tupla mutable con conversión a lista
 
+
+print(type(my_tuple))
 my_tuple = list(my_tuple)
 print(type(my_tuple))
 
@@ -49,6 +51,8 @@ print(type(my_tuple))
 # Eliminación
 
 # del my_tuple[2] TypeError: 'tuple' object doesn't support item deletion
+
+
 
 del my_tuple
 # print(my_tuple) NameError: name 'my_tuple' is not defined

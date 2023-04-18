@@ -8,7 +8,7 @@ print(3 - 4)
 print(3 * 4)
 print(3 / 4)
 print(10 % 3)
-print(10 // 3)
+print("que es esto",10 // 3)
 print(2 ** 3)
 print(2 ** 3 + 3 - 7 / 1 // 4)
 
@@ -34,8 +34,10 @@ print(3 == 4)
 print(3 != 4)
 
 # Operaciones con cadenas de texto
+print("comparativas de string")
 print("Hola" > "Python")
 print("Hola" < "Python")
+print("ASCII")
 print("aaaa" >= "abaa")  # Ordenación alfabética por ASCII
 print(len("aaaa") >= len("abaa"))  # Cuenta caracteres
 print("Hola" <= "Python")

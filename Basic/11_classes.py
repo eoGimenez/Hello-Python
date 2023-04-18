@@ -16,6 +16,7 @@ print(MyEmptyPerson())
 
 class Person:
     def __init__(self, name, surname, alias="Sin alias"):
+        self.name= name
         self.full_name = f"{name} {surname} ({alias})"  # Propiedad pública
         self.__name = name  # Propiedad privada
 
@@ -27,15 +28,17 @@ class Person:
 
 
 my_person = Person("Brais", "Moure")
+print("probando name: ", my_person.name)
 print(my_person.full_name)
 print(my_person.get_name())
 my_person.walk()
 
 my_other_person = Person("Brais", "Moure", "MoureDev")
-print(my_other_person.full_name)
+print("my other person primer ", my_other_person.full_name)
 my_other_person.walk()
-my_other_person.full_name = "Héctor de León (El loco de los perros)"
+my_other_person.full_name = "Héctor de León (El loco de los perros)" # reasigna la variable sin cabiar las del constructor
 print(my_other_person.full_name)
+print(my_other_person.name)
 
 my_other_person.full_name = 666
 print(my_other_person.full_name)

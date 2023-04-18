@@ -20,8 +20,8 @@ except:
 try:
     print(numberOne + numberTwo)
     print("No se ha producido un error")
-except:
-    print("Se ha producido un error")
+except Exception as message:
+    print("este es el exception ",message)
 else:  # Opcional
     # Se ejecuta si no se produce una excepción
     print("La ejecución continúa correctamente")
@@ -46,5 +46,5 @@ try:
     print("No se ha producido un error")
 except ValueError as error:
     print(error)
-except Exception as my_random_error_name:
+except Exception as my_random_error_name: #Generico, este sería para la ultima excepción
     print(my_random_error_name)

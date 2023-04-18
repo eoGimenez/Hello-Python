@@ -19,9 +19,9 @@ while my_condition < 20:
     if my_condition == 15:
         print("Se detiene la ejecución")
         break
-    print(my_condition)
+    print("MI CONDICION :",my_condition)
 
-print("La ejecución continúa")
+print("La ejecución continúa", my_condition)
 
 # For
 
@@ -52,9 +52,7 @@ else:
 print("La ejecución continúa")
 
 for element in my_dict:
-    print(element)
-    if element == "Edad":
-        continue
-    print("Se ejecuta")
+    if element == "Edad": continue
+    else: print(element)
 else:
     print("El bluce for para diccionario ha finalizado")
